@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+
+  <ion-button 
+    color="success"
+    shape="round"
+    expand="full"
+    [routerLink]="['/cadastro', id]"
+  >
+    Ir para cadastro
+  </ion-button>
+
+  <ion-button 
+    color="primary"
+    shape="round"
+    expand="full"
+    routerLink="/login"
+  >
+    Ir para login
+  </ion-button>
+
+</ion-content>

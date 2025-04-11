@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="floating">Usuário</ion-label>
+    <ion-input [(ngModel)]="usuario" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input [(ngModel)]="senha" type="password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" color="primary" shape="round" (click)="fazerLogin()">
+    Entrar
+  </ion-button>
+
+  <ion-button expand="full" color="medium" routerLink="/home">
+    Voltar para Home
+  </ion-button>
+
+  <ion-text color="danger" *ngIf="loginInvalido">
+    <p>Usuário ou senha inválidos!</p>
+  </ion-text>
+
+  <ion-text color="success" *ngIf="loginAutenticado">
+    <p>Autenticado com sucesso!</p>
+  </ion-text>
+</ion-content>

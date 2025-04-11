@@ -1,0 +1,7 @@
+{
+  "name": "projeto-rotas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

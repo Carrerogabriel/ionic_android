@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>cadastro</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button color="success" defaultHref="/home" text="Voltar" icon="home-outline"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button color="danger" shape="round" expand="full" routerLink="/home">
+    Voltar para home
+  </ion-button>
+
+  <p>Meu parâmetro: {{id}}</p>
+</ion-content>
